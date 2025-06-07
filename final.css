@@ -1,0 +1,15 @@
+p {
+  text-align: center;
+  font-weight: 500;
+}
+
+.navbar {
+  padding: 0;
+}
+
+div > a {
+  display: block;
+}
+div > a:hover {
+  background-color: aqua;
+}
