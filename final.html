@@ -60,32 +60,137 @@
         <div class="container-fluid text-center mx-6">
           <h1>Previous Work</h1>
           <h2>Here are some classes I have taken in the CS program:</h2>
-          <table class="mx-auto">
-            <thead>
-              <tr>
-                <th>Course #</th>
-                <th>Title</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>CS163</td>
-                <td>Data Structures</td>
-              </tr>
-              <tr>
-                <td>CS250</td>
-                <td>Discrete Structures 1</td>
-              </tr>
-              <tr>
-                <td>CS251</td>
-                <td>Discrete Structures 2</td>
-              </tr>
-              <tr>
-                <td>CS205</td>
-                <td>System Programming and Arch</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="previous-accordion mx-auto">
+            <div class="accordion" id="accordion1">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Data Structures
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordion1"
+                >
+                  <div class="accordion-body">
+                    <h5 class="align-text-top">Course ID: CS163</h5>
+                    <p>
+                      <strong>Course Description:</strong> Data abstraction with
+                      formal specification. Elementary algorithm analysis. Basic
+                      concepts of data and its representation inside a computer.
+                      Linear, linked, and orthogonal lists; tree structures.
+                      Data structures are implemented as data abstractions using
+                      pointer based implementations. Sorting and search
+                      strategies. Data management.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Discrete Structures 1
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordion1"
+                >
+                  <div class="accordion-body">
+                    <h5 class="align-text-top">Course ID: CS250</h5>
+                    <strong>Course Description:</strong>
+                    Introduces discrete structures and techniques for computing.
+                    Sets. Graphs and trees. Functions: properties, recursive
+                    definitions. Relations: properties, equivalence, partial
+                    order. Proof techniques, inductive proof. Counting
+                    techniques and discrete probability.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Discrete Structures 2
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordion1"
+                >
+                  <div class="accordion-body">
+                    <h5 class="align-text-top">Course ID: CS251</h5>
+                    <strong>Course Description:</strong>
+                    Continuation of CS 250. Logic: propositional calculus,
+                    first-order predicate calculus. Formal reasoning: natural
+                    deduction, resolution. Applications to program correctness
+                    and automatic reasoning. Introduction to algebraic
+                    structures in computing.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    System Programming and Arch
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
+                  data-bs-parent="#accordion1"
+                >
+                  <div class="accordion-body">
+                    <h5 class="align-text-top">Course ID: CS205</h5>
+                    <strong>Course Description:</strong>
+                    Introduction to computer systems from a software
+                    perspective. Topics include: 1) Basic machine organization,
+                    2) System programming using C and assembly language, 3)
+                    System tools such as compilers and debuggers, 4) Data
+                    representation (bits & bytes, characters, integers, floating
+                    point numbers), 5) Implementation of control flow, procedure
+                    calls, and complex data types at machine level, 6) Improving
+                    program performance, and 7) Introduction to memory
+                    hierarchy.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <!-- PROJECTS SECTION -->
