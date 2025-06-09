@@ -1,8 +1,46 @@
+h1 {
+  padding-top: 100px;
+}
+
+ul {
+  margin-left: 30%;
+}
+
 p {
   text-align: center;
   font-weight: 500;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding-bottom: 200px;
 }
 
+table {
+  border: 1px solid black;
+}
+
+th {
+  padding: 5px;
+  background-color: gray;
+  color: aliceblue;
+}
+
+tr {
+  background-color: skyblue;
+  border: 1px solid black;
+}
+
+td {
+  padding-left: 20px;
+  padding: 5px;
+}
+
+#about {
+  background-color: bisque;
+}
+
+#previous-work {
+  background-color: rgb(235, 161, 161);
+}
 .navbar {
   padding: 0;
 }
