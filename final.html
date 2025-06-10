@@ -71,7 +71,7 @@
           <div class="previous-accordion mx-auto">
             <div class="accordion" id="accordion1">
               <div class="accordion-item">
-                <h2 class="accordion-header">
+                <h2 class="accordion-header" id="headingOne">
                   <button
                     class="accordion-button"
                     type="button"
@@ -240,7 +240,7 @@
                     width="100px"
                     height="400px"
                 /></a>
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption">
                   <h5>Lab 5</h5>
                   <p>
                     A program written in assembly that does a few different
@@ -262,7 +262,7 @@
                     width="100px"
                     height="400px"
                 /></a>
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption">
                   <h5>Lab 4</h5>
                   <p>
                     A program written in C that acts as a "sieve" that will find
@@ -300,7 +300,54 @@
         </div>
       </section>
       <!-- CONTACT SECTION -->
-      <section id="contact"></section>
+      <section id="contact">
+        <div class="container-fluid form-container">
+          <form id="form1" class="container-lg border rounded">
+            <h1>Contact Form</h1>
+            <span>Please fill out your contact info below</span>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="name" class="form-control" id="name" name="name" />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+              />
+            </div>
+            <fieldset class="form-check" name="pronouns">
+              <legend>Preferred pronouns</legend>
+              <input type="radio" class="radio" id="she" name="pronouns" />
+              <label class="radio" for="she">She/her</label>
+              <br />
+              <input type="radio" class="radio" id="he" name="pronouns" />
+              <label class="radio" for="he">He/him</label>
+              <br />
+              <input type="radio" class="radio" id="they" name="pronouns" />
+              <label class="radio" for="they">They/them</label>
+              <br />
+              <input type="radio" class="radio" id="prefer" name="pronouns" />
+              <label class="radio" for="prefer">I prefer not to say</label>
+            </fieldset>
+            <div class="input-group">
+              <label class="input-group-text" for="messagebox">Message</label>
+              <textarea
+                id="messagebox"
+                class="form-control"
+                aria-label="Message"
+              ></textarea>
+            </div>
+            <div class="form-group my-4">
+              <input type="submit" class="btn btn-primary" value="Submit" />
+              <input type="reset" class="btn btn-secondary" value="Reset" />
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
