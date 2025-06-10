@@ -1,3 +1,9 @@
+nav.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 7;
+}
+
 h1 {
   padding-top: 100px;
 }
@@ -55,9 +61,20 @@ div > a:hover {
 .previous-accordion {
   padding-left: 25%;
   padding-right: 25%;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .accordion-body {
   margin-left: 50px;
   margin-right: 50px;
+}
+
+/* .carousel-item > div > p {
+  color: black;
+} */
+
+.carousel-link {
+  height: 100%;
+  display: block;
 }

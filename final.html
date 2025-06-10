@@ -17,7 +17,10 @@
 
   <body>
     <main>
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <nav
+        class="navbar navbar-expand-md navbar-light"
+        style="background-color: #e3f2fd"
+      >
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Final Project</a>
           <button
@@ -33,7 +36,12 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-item nav-link active" href="#about">About </a>
+              <a
+                class="nav-item nav-link active"
+                aria-current="page"
+                href="#about"
+                >About
+              </a>
               <a class="nav-item nav-link" href="#previous-work"
                 >Previous Work</a
               >
@@ -194,7 +202,103 @@
         </div>
       </section>
       <!-- PROJECTS SECTION -->
-      <section id="projects"></section>
+      <section id="projects">
+        <div class="container-fluid text-center mx-6">
+          <h1>Projects</h1>
+          <div
+            id="carousel1"
+            class="carousel carousel-dark slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carousel1"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carousel1"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a
+                  class="carousel-link"
+                  href="https://github.com/quentinschool/LAB5"
+                  target="_blank"
+                >
+                  <img
+                    src="github.png"
+                    class="d-block w-100"
+                    alt="github logo"
+                    width="100px"
+                    height="400px"
+                /></a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Lab 5</h5>
+                  <p>
+                    A program written in assembly that does a few different
+                    things involving dynamically allocating arrays and marking
+                    or displaying numbers in varying orders.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <a
+                  class="carousel-link"
+                  href="https://github.com/quentinschool/LAB4"
+                  target="_blank"
+                >
+                  <img
+                    src="github.png"
+                    class="d-block w-100"
+                    alt="github logo"
+                    width="100px"
+                    height="400px"
+                /></a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Lab 4</h5>
+                  <p>
+                    A program written in C that acts as a "sieve" that will find
+                    and print prime or composite numbers depending on command
+                    line arguments, up to an inputted number"
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carousel1"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carousel1"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
       <!-- CONTACT SECTION -->
       <section id="contact"></section>
     </main>
