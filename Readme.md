@@ -1,6 +1,6 @@
 ### Final Project Website:
 
-This is a simple webpage displaying some of my history with CS in school. It displays information using various elements using HTML, css, bootstrap, and javascript.
+This is a simple webpage displaying some of my history with CS in school. It displays information using various elements using HTML, css, bootstrap, and javascript..
 
 ### Sources used:
 
