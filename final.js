@@ -1,15 +1,15 @@
 // add active link function for navbar
-const links = document.querySelectorAll(".nav-link");
+var btnContainer = document.getElementById("navbarNavAltMarkup");
 
-if (links.length) {
-  links.forEach((link) => {
-    link.addEventListener("click", (e) => {
-      links.forEach((link) => {
-        link.classList.remove("active");
-      });
-      e.preventDefault();
-      link.classList.add("active");
-    });
+// Get all buttons with class="btn" inside the container
+var btns = btnContainer.getElementsByClassName("nav-link");
+
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function () {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
   });
 }
 
