@@ -6,6 +6,7 @@ nav.navbar {
 
 h1 {
   padding-top: 100px;
+  text-decoration: underline;
 }
 
 ul {
@@ -17,7 +18,8 @@ ul {
   font-weight: 500;
   margin-left: 25%;
   margin-right: 25%;
-  padding-bottom: 200px;
+  padding-bottom: 150px;
+  margin-bottom: 0;
 }
 
 table {
@@ -46,13 +48,21 @@ td {
 
 #previous-work {
   background-color: rgb(235, 161, 161);
+  padding-bottom: 25px;
 }
 
 #projects {
   background-color: rgb(193, 240, 146);
 }
-.navbar {
-  padding: 0;
+
+#contact {
+  background-color: rgb(136, 136, 236);
+}
+
+.navbar-nav > .nav-link {
+  height: 100%;
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 
 .navbar-nav > a {
@@ -61,7 +71,7 @@ td {
 .navbar-nav > a:hover {
   background-color: aqua;
 }
-@media (min-width: 414px) {
+@media (min-width: 600px) {
   .previous-accordion {
     padding-left: 25%;
     padding-right: 25%;
@@ -112,15 +122,32 @@ td {
   margin: 0;
   max-width: 500px;
 }
-
-a > img {
-  padding-left: 70px;
-  padding-right: 70px;
-  padding-bottom: 20px;
-  padding-top: 20px;
+@media (min-width: 670px) {
+  a > img {
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
 }
 
 #contact {
   padding-top: 50px;
   padding-bottom: 100px;
+}
+
+#contact > .container-fluid {
+  background-color: rgb(115, 192, 243);
+  padding: 0;
+}
+
+main > nav.navbar {
+  padding: 0;
+}
+
+@media (max-width: 670px) {
+  a > img {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
 }
